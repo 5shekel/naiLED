@@ -671,6 +671,7 @@ design rules under a new name.
 </autorouter>
 <elements>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <element name="U2" library="Microchip-24LCxxx" package="SOT95P290X145-5N" value="24LC00T-I/OT" x="10.7696" y="4.826" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="SOT-23-5 " x="10.7696" y="4.826" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="62K0574" x="10.7696" y="4.826" size="1.778" layer="27" rot="R180" display="off"/>
@@ -743,6 +744,45 @@ design rules under a new name.
 <element name="R3" library="dp_devices" package="R402" value="" x="12.065" y="3.937" smashed="yes" rot="R270">
 <attribute name="VALUE" x="10.033" y="4.572" size="1.27" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
+=======
+<element name="U2" library="Microchip-24LCxxx" package="SOT95P290X145-5N" value="24LC00T-I/OT" x="1.778" y="8.3566" smashed="yes" rot="R270">
+<attribute name="PACKAGE" value="SOT-23-5 " x="1.778" y="8.3566" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="62K0574" x="1.778" y="8.3566" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="24LC00T-I/OT " x="1.778" y="8.3566" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SUPPLIER" value="MICROCHIP" x="1.778" y="8.3566" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="9757864  " x="1.778" y="8.3566" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="U3" library="nld" package="SOIC127P798X216-8N" value="ATTINY85-20SU" x="6.731" y="2.7686" smashed="yes">
+<attribute name="PACKAGE" value="SOIC-8" x="6.731" y="2.7686" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="58M3797" x="6.731" y="2.7686" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ATTINY85-20SU" x="6.731" y="2.7686" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="Atmel" x="6.731" y="2.7686" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1455164" x="6.731" y="2.7686" size="1.778" layer="27" display="off"/>
+</element>
+<element name="IC1" library="yair_r" package="DFN-6PIN" value="TCS3414" x="10.1854" y="7.5946" smashed="yes" rot="R180">
+<attribute name="VALUE" x="10.9474" y="10.6426" size="1.016" layer="27" rot="R180"/>
+</element>
+<element name="R4" library="dp_devices" package="R402" value="" x="12.1158" y="1.4986" smashed="yes" rot="R90">
+<attribute name="VALUE" x="14.1478" y="0.8636" size="1.27" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="R5" library="dp_devices" package="R402" value="" x="0.6858" y="5.1562" smashed="yes" rot="R90">
+<attribute name="VALUE" x="2.7178" y="4.5212" size="1.27" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C1" library="dp_devices" package="C402" value="" x="1.778" y="6.2992" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-0.4445" y="7.5692" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="E$1" library="Logo" package="OSHW_FILLX100_NOTEXT" value="" x="24.0538" y="13.4874"/>
+<element name="LED2" library="microbuilder" package="RGBLED_PLCC4" value="" x="5.715" y="7.493" rot="R180"/>
+<element name="R1" library="dp_devices" package="R402" value="" x="1.524" y="2.794" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-0.508" y="3.429" size="1.27" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="R2" library="dp_devices" package="R402" value="" x="0.381" y="2.794" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-1.651" y="3.429" size="1.27" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="R3" library="dp_devices" package="R402" value="" x="12.065" y="3.937" smashed="yes" rot="R270">
+<attribute name="VALUE" x="10.033" y="4.572" size="1.27" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+>>>>>>> parent of d6019cb... working on the at841
 <element name="U$1" library="SparkFun-DigitalIC" package="QFN20" value="ATTINY24QFN" x="6.731" y="2.921"/>
 </elements>
 <signals>
@@ -756,6 +796,7 @@ design rules under a new name.
 <contactref element="C1" pad="1"/>
 <contactref element="LED2" pad="2"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <contactref element="IC2" pad="9"/>
 <contactref element="VCC-TAB" pad="1"/>
 <wire x1="6.95" y1="7.109" x2="9.4742" y2="3.8862" width="0" layer="19" extent="1-1"/>
@@ -766,6 +807,8 @@ design rules under a new name.
 <wire x1="1.0264" y1="4.3688" x2="1.2884" y2="7.7216" width="0" layer="19" extent="1-1"/>
 <wire x1="1.0518" y1="2.9718" x2="1.0264" y2="4.3688" width="0" layer="19" extent="1-1"/>
 =======
+=======
+>>>>>>> parent of d6019cb... working on the at841
 <wire x1="0.6858" y1="5.8062" x2="0.8532" y2="5.8062" width="0.2032" layer="1"/>
 <wire x1="0.8532" y1="5.8062" x2="1.27" y2="6.223" width="0.2032" layer="1"/>
 <wire x1="1.27" y1="6.223" x2="1.651" y2="6.223" width="0.2032" layer="1"/>
@@ -778,6 +821,9 @@ design rules under a new name.
 <wire x1="7.115" y1="8.093" x2="9.0354" y2="7.5946" width="0" layer="19" extent="1-1"/>
 <wire x1="2.7178" y1="7.0612" x2="7.115" y2="8.093" width="0" layer="19" extent="1-1"/>
 <wire x1="1.778" y1="6.9492" x2="2.7178" y2="7.0612" width="0" layer="19" extent="1-1"/>
+<<<<<<< HEAD
+>>>>>>> parent of d6019cb... working on the at841
+=======
 >>>>>>> parent of d6019cb... working on the at841
 </signal>
 <signal name="D2/A1/SCK/SCL">
@@ -785,10 +831,13 @@ design rules under a new name.
 <contactref element="IC1" pad="P$1"/>
 <contactref element="U2" pad="1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <contactref element="IC2" pad="1"/>
 <wire x1="3.937" y1="4.524" x2="12.065" y2="3.8862" width="0" layer="19" extent="1-1"/>
 <wire x1="3.5384" y1="6.7716" x2="3.937" y2="4.524" width="0" layer="19" extent="1-1"/>
 =======
+=======
+>>>>>>> parent of d6019cb... working on the at841
 <wire x1="2.7178" y1="9.652" x2="10.16" y2="9.652" width="0.2032" layer="1"/>
 <wire x1="10.16" y1="9.652" x2="10.287" y2="9.525" width="0.2032" layer="1"/>
 <wire x1="10.287" y1="9.525" x2="10.287" y2="6.858" width="0.2032" layer="1"/>
@@ -796,6 +845,9 @@ design rules under a new name.
 <wire x1="10.668" y1="6.477" x2="11.1178" y2="6.477" width="0.2032" layer="1"/>
 <wire x1="11.1178" y1="6.477" x2="11.2854" y2="6.6446" width="0.2032" layer="1"/>
 <wire x1="10.668" y1="6.477" x2="10.4394" y2="3.4036" width="0" layer="19" extent="1-1"/>
+<<<<<<< HEAD
+>>>>>>> parent of d6019cb... working on the at841
+=======
 >>>>>>> parent of d6019cb... working on the at841
 </signal>
 <signal name="D5/A0/RESET">
@@ -827,6 +879,7 @@ design rules under a new name.
 <vertex x="0.127" y="14.224"/>
 </polygon>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <contactref element="IC2" pad="8"/>
 <contactref element="GND-TAB" pad="1"/>
 <polygon width="0.1524" layer="1">
@@ -849,6 +902,16 @@ design rules under a new name.
 <wire x1="1.524" y1="2.1336" x2="1.524" y2="2.144" width="0.2032" layer="1"/>
 >>>>>>> parent of d6019cb... working on the at841
 </signal>
+=======
+<wire x1="3.0226" y1="0.8636" x2="1.778" y2="5.6492" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="D4/PWM">
+<contactref element="U3" pad="3"/>
+<contactref element="R1" pad="2"/>
+<wire x1="3.0226" y1="2.1336" x2="1.524" y2="2.1336" width="0.2032" layer="1"/>
+<wire x1="1.524" y1="2.1336" x2="1.524" y2="2.144" width="0.2032" layer="1"/>
+</signal>
+>>>>>>> parent of d6019cb... working on the at841
 <signal name="D3/A3">
 <contactref element="U3" pad="2"/>
 <contactref element="R2" pad="2"/>
@@ -862,9 +925,12 @@ design rules under a new name.
 <contactref element="U3" pad="6"/>
 <contactref element="R5" pad="1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <contactref element="IC2" pad="5"/>
 <wire x1="3.937" y1="2.524" x2="2.3518" y2="2.9718" width="0" layer="19" extent="1-1"/>
 =======
+=======
+>>>>>>> parent of d6019cb... working on the at841
 <contactref element="R3" pad="2"/>
 <wire x1="0.6858" y1="4.5062" x2="1.4628" y2="4.5062" width="0.2032" layer="1"/>
 <wire x1="1.4628" y1="4.5062" x2="1.905" y2="4.191" width="0.2032" layer="1"/>
@@ -874,6 +940,9 @@ design rules under a new name.
 <wire x1="10.414" y1="2.159" x2="10.4394" y2="2.1336" width="0.2032" layer="1"/>
 <wire x1="10.4394" y1="2.1336" x2="10.9116" y2="2.1336" width="0.2032" layer="1"/>
 <wire x1="10.9116" y1="2.1336" x2="12.065" y2="3.287" width="0.2032" layer="1"/>
+<<<<<<< HEAD
+>>>>>>> parent of d6019cb... working on the at841
+=======
 >>>>>>> parent of d6019cb... working on the at841
 </signal>
 <signal name="D0/PWM/MOSI/SDA">
@@ -882,11 +951,14 @@ design rules under a new name.
 <contactref element="IC1" pad="P$3"/>
 <contactref element="R4" pad="1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <contactref element="IC2" pad="4"/>
 <wire x1="3.937" y1="3.024" x2="12.065" y2="5.7658" width="0" layer="19" extent="1-1"/>
 <wire x1="2.3264" y1="4.3688" x2="3.937" y2="3.024" width="0" layer="19" extent="1-1"/>
 <wire x1="3.5384" y1="8.6716" x2="2.3264" y2="4.3688" width="0" layer="19" extent="1-1"/>
 =======
+=======
+>>>>>>> parent of d6019cb... working on the at841
 <wire x1="0.8382" y1="9.652" x2="0.8382" y2="10.3632" width="0.2032" layer="1"/>
 <wire x1="0.8382" y1="10.3632" x2="1.143" y2="10.668" width="0.2032" layer="1"/>
 <wire x1="1.143" y1="10.668" x2="10.922" y2="10.668" width="0.2032" layer="1"/>
@@ -901,13 +973,20 @@ design rules under a new name.
 <wire x1="12.827" y1="0.762" x2="12.2024" y2="0.762" width="0.2032" layer="1"/>
 <wire x1="12.2024" y1="0.762" x2="12.1158" y2="0.8486" width="0.2032" layer="1"/>
 <wire x1="12.1158" y1="0.8486" x2="10.4394" y2="0.8636" width="0" layer="19" extent="1-1"/>
+<<<<<<< HEAD
+>>>>>>> parent of d6019cb... working on the at841
+=======
 >>>>>>> parent of d6019cb... working on the at841
 </signal>
 <signal name="N$1">
 <contactref element="LED2" pad="1"/>
 <contactref element="R3" pad="1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <wire x1="5.75" y1="7.109" x2="9.271" y2="8.651" width="0" layer="19" extent="1-1"/>
+=======
+<wire x1="7.115" y1="6.893" x2="12.065" y2="4.587" width="0" layer="19" extent="1-1"/>
+>>>>>>> parent of d6019cb... working on the at841
 =======
 <wire x1="7.115" y1="6.893" x2="12.065" y2="4.587" width="0" layer="19" extent="1-1"/>
 >>>>>>> parent of d6019cb... working on the at841
@@ -915,6 +994,7 @@ design rules under a new name.
 <signal name="N$2">
 <contactref element="LED2" pad="4"/>
 <contactref element="R2" pad="1"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <wire x1="5.75" y1="9.909" x2="10.541" y2="8.651" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -941,6 +1021,14 @@ design rules under a new name.
 <contactref element="R3" pad="2"/>
 <wire x1="4.937" y1="5.524" x2="9.271" y2="7.351" width="0" layer="19" extent="1-1"/>
 =======
+<contactref element="LED2" pad="3"/>
+<wire x1="1.524" y1="3.444" x2="4.315" y2="8.093" width="0" layer="19" extent="1-1"/>
+>>>>>>> parent of d6019cb... working on the at841
+=======
+<wire x1="0.381" y1="3.444" x2="4.315" y2="6.893" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="R1" pad="1"/>
 <contactref element="LED2" pad="3"/>
 <wire x1="1.524" y1="3.444" x2="4.315" y2="8.093" width="0" layer="19" extent="1-1"/>
 >>>>>>> parent of d6019cb... working on the at841
