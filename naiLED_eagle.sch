@@ -962,7 +962,12 @@ http://dangerousprototypes.com</description>
 <segment>
 <pinref part="U3" gate="A" pin="PB4"/>
 <label x="35.56" y="20.32" size="1.016" layer="95" xref="yes"/>
-<wire x1="17.78" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="20.32" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
+<junction x="30.48" y="20.32"/>
+<pinref part="U$1" gate="G$1" pin="DI"/>
+<wire x1="30.48" y1="10.16" x2="60.96" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D3/A3" class="0">
