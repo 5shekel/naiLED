@@ -819,8 +819,8 @@ http://dangerousprototypes.com</description>
 <part name="P+2" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
-<part name="R4" library="dp_devices" deviceset="RESISTOR" device="-0402"/>
-<part name="R5" library="dp_devices" deviceset="RESISTOR" device="-0402"/>
+<part name="R1" library="dp_devices" deviceset="RESISTOR" device="-0402"/>
+<part name="R2" library="dp_devices" deviceset="RESISTOR" device="-0402"/>
 <part name="P+5" library="SparkFun" deviceset="VCC" device=""/>
 <part name="R6" library="dp_devices" deviceset="RESISTOR" device="-0402"/>
 <part name="C1" library="dp_devices" deviceset="CAPACITOR_NPOL" device="-0402"/>
@@ -835,7 +835,7 @@ http://dangerousprototypes.com</description>
 <instance part="U2" gate="A" x="45.72" y="76.2"/>
 <instance part="U3" gate="A" x="0" y="27.94" smashed="yes">
 <attribute name="NAME" x="-11.9634" y="37.084" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="-11.7856" y="13.2334" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="-11.7856" y="13.2334" size="1.9304" layer="96" ratio="10" rot="SR0"/>
 </instance>
 <instance part="GND1" gate="1" x="66.04" y="-2.54"/>
 <instance part="GND3" gate="1" x="-20.32" y="17.78"/>
@@ -847,9 +847,17 @@ http://dangerousprototypes.com</description>
 <instance part="P+4" gate="1" x="124.46" y="40.64" smashed="yes" rot="R180">
 <attribute name="VALUE" x="125.984" y="39.116" size="1.778" layer="96"/>
 </instance>
-<instance part="P+3" gate="1" x="20.32" y="40.64"/>
-<instance part="R4" gate="G$1" x="20.32" y="35.56" rot="R90"/>
-<instance part="R5" gate="G$1" x="25.4" y="33.02" rot="R90"/>
+<instance part="P+3" gate="1" x="20.32" y="43.18" smashed="yes">
+<attribute name="VALUE" x="14.224" y="44.196" size="1.778" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="20.32" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.8214" y="34.29" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="23.622" y="31.75" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="R2" gate="G$1" x="25.4" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.9014" y="36.83" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="28.702" y="34.29" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
 <instance part="P+5" gate="1" x="119.38" y="27.94" rot="R180"/>
 <instance part="R6" gate="G$1" x="119.38" y="33.02" rot="R90"/>
 <instance part="C1" gate="C" x="124.46" y="48.26" smashed="yes" rot="R180">
@@ -901,12 +909,12 @@ http://dangerousprototypes.com</description>
 <wire x1="124.46" y1="40.64" x2="124.46" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="P+3" gate="1" pin="VCC"/>
-<wire x1="20.32" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
-<junction x="20.32" y="40.64"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="40.64" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
+<junction x="20.32" y="43.18"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -959,12 +967,10 @@ http://dangerousprototypes.com</description>
 <net name="D1/PWM/MISO" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PB1"/>
-<wire x1="17.78" y1="27.94" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
 <label x="38.1" y="27.94" size="1.016" layer="95" xref="yes"/>
+<wire x1="17.78" y1="27.94" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="27.94" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<junction x="25.4" y="27.94"/>
 <pinref part="IC1" gate="A" pin="INT"/>
 <wire x1="116.84" y1="38.1" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -974,26 +980,29 @@ http://dangerousprototypes.com</description>
 <wire x1="114.3" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="33.02" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
 <junction x="33.02" y="27.94"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="33.02" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
+<junction x="25.4" y="27.94"/>
 </segment>
 </net>
 <net name="D0/PWM/MOSI/SDA" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="SDA"/>
-<wire x1="63.5" y1="81.28" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="PB0"/>
 <wire x1="20.32" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
 <label x="38.1" y="30.48" size="1.016" layer="95" xref="yes"/>
 <pinref part="IC1" gate="A" pin="SDA"/>
 <wire x1="30.48" y1="30.48" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="38.1" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="38.1" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="38.1" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
 <junction x="30.48" y="30.48"/>
-<wire x1="30.48" y1="53.34" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
-<junction x="30.48" y="38.1"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <junction x="20.32" y="30.48"/>
 <wire x1="20.32" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="81.28" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
+<junction x="73.66" y="38.1"/>
 </segment>
 </net>
 <net name="D3/A3" class="0">
@@ -1006,6 +1015,13 @@ http://dangerousprototypes.com</description>
 <wire x1="35.56" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="43.18" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <junction x="35.56" y="22.86"/>
+</segment>
+</net>
+<net name="NC" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="PB5"/>
+<wire x1="17.78" y1="17.78" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
+<label x="20.32" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
